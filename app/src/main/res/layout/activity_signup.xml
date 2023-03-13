@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/krrlogo">
+
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup Page"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Username"
+        android:padding="16dp"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:layout_below="@id/signup_title"
+        android:layout_marginHorizontal="32dp"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="E-mail"
+        android:padding="16dp"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/username"
+        android:layout_marginHorizontal="32dp"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize,VisualLintBounds" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:padding="16dp"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:layout_below="@id/email"
+        android:layout_marginHorizontal="32dp"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="161dp"
+        android:layout_height="69dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="44dp"
+        android:text="signup"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,VisualLintBounds,VisualLintButtonSize,TextContrastCheck" />
+
+</RelativeLayout>
