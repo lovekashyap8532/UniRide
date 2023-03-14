@@ -1,22 +1,21 @@
 package com.example.login_4
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class SignupActivity : AppCompatActivity() {
 
-    private lateinit var signupbutton: Button
+    private lateinit var auth: FirebaseAuth
     private lateinit var username: EditText
     private lateinit var email: EditText
     private lateinit var password: EditText
-
-    private lateinit var auth: FirebaseAuth // declare an instance of FirebaseAuth
+    private lateinit var confirmpassword: EditText
+    private lateinit var signupbutton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,50 +24,44 @@ class SignupActivity : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
 
-        // Bind the signup button and EditText views
-        signupbutton = findViewById(R.id.signupbutton)
+        // Bind the name, email, password, and confirm password EditText fields
         username = findViewById(R.id.username)
         email = findViewById(R.id.email)
         password = findViewById(R.id.password)
+        confirmpassword = findViewById(R.id.confirmpassword)
+
+        // Bind the signup button
+        signupbutton = findViewById(R.id.signupbutton)
 
         // Set onClickListener for signup button
         signupbutton.setOnClickListener {
             // Get user input from EditText fields
-            val name = username.text.toString()
-            val email = email.text.toString()
-            val password = password.text.toString()
+            val nameInput = username.text.toString()
+            val emailInput = email.text.toString()
+            val passwordInput = password.text.toString()
+            val confirmPasswordInput = confirmpassword.text.toString()
 
             // Validate user input
-            if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
+            if (nameInput.isEmpty() || emailInput.isEmpty() || passwordInput.isEmpty() || confirmPasswordInput.isEmpty()) {
                 // Display an error message to the user indicating that all fields are required
                 Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show()
+            } else if (passwordInput != confirmPasswordInput) {
+                // Display an error message to the user indicating that the passwords do not match
+                Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
             } else {
-                // Create a new user with email and password
-                auth.createUserWithEmailAndPassword(email, password)
+                // Create user in Firebase Auth
+                auth.createUserWithEmailAndPassword(emailInput, passwordInput)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
-                            // Sign in success, update UI with the signed-in user's information
-                            auth.currentUser
-                            Log.d(TAG, "createUserWithEmail:success")
-                            // Do any additional tasks you need to do after the user is signed up
-                            // For example, save the user information to a database
-
-                            // Redirect to main activity
-                            // Replace com.example.login_4.MainActivity with the activity you want to redirect to
-                            startActivity(Intent(this, MainActivity::class.java))
+                            // Redirect to ProfileActivity
+                            startActivity(Intent(this, ProfileActivity::class.java))
                             finish()
                         } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "createUserWithEmail:failure", task.exception)
-                            // Display an error message to the user indicating that account creation failed
-                            Toast.makeText(this, "Account creation failed", Toast.LENGTH_SHORT).show()
+                            // If sign up fails, display a message to the user.
+                            Toast.makeText(this, "Authentication failed", Toast.LENGTH_SHORT).show()
                         }
                     }
             }
         }
-    }
-
-    companion object {
-        private const val TAG = "SignupActivity"
     }
 }
