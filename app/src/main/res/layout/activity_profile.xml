@@ -17,7 +17,7 @@
         app:title="Profile"
         app:titleTextColor="@android:color/white" />
 
-    <!-- Current location TextView -->
+    <!-- Current location  TextView -->
     <TextView
         android:id="@+id/current_location"
         android:layout_width="match_parent"
