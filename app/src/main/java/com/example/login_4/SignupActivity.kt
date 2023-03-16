@@ -1,5 +1,6 @@
 package com.example.login_4
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -17,6 +18,7 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var confirmpassword: EditText
     private lateinit var signupbutton: Button
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
