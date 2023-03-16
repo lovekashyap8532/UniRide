@@ -54,7 +54,7 @@ class SignupActivity : AppCompatActivity() {
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
                             // Redirect to ProfileActivity
-                            startActivity(Intent(this, ProfileActivity::class.java))
+                            startActivity(Intent(this, MapsActivity::class.java))
                             finish()
                         } else {
                             // If sign up fails, display a message to the user.

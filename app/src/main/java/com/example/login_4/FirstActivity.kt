@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
 @Suppress("NAME_SHADOWING")
-class HomeActivity : AppCompatActivity() {
+class FirstActivity : AppCompatActivity() {
 
     private lateinit var loginbutton: Button
     private lateinit var signupbutton: Button
@@ -19,7 +19,7 @@ class HomeActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_first)
 
         // Bind the login and signup buttons
         loginbutton = findViewById(R.id.loginbutton)
