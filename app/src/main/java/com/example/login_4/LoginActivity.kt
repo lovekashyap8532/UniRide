@@ -1,5 +1,6 @@
 package com.example.login_4
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -15,11 +16,12 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var loginbutton: Button
     private lateinit var auth: FirebaseAuth
 
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        email = findViewById(R.id.email)
         password = findViewById(R.id.password)
         loginbutton = findViewById(R.id.loginbutton)
 
@@ -41,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
                             Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
 
                             // Redirect to ProfileActivity
-                            val intent = Intent(this, ProfileActivity::class.java)
+                            val intent = Intent(this, HomeActivity::class.java)
                             startActivity(intent)
                             finish()
                         } else {
@@ -58,7 +60,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if(FirebaseAuth.getInstance().currentUser != null) {
-            val intent = Intent(this,ProfileActivity::class.java)
+            val intent = Intent(this,HomeActivity::class.java)
             startActivity(intent)
             finish()
         }

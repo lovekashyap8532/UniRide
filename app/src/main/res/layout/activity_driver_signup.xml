@@ -65,7 +65,7 @@
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHint="#AB47BC"
-                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck" />
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck,VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/password"
@@ -80,21 +80,21 @@
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHint="#AB47BC"
-                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck" />
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck,VisualLintTextFieldSize" />
 
             <EditText
-                android:id="@+id/confirmpassword"
+                android:id="@+id/mobile"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawableLeft="@drawable/baseline_phone_24"
                 android:drawablePadding="8dp"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
+                android:hint="Mobile No."
+                android:inputType="number"
                 android:padding="8dp"
                 android:textColor="@color/black"
-                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck,TextContrastCheck" />
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck,TextContrastCheck,VisualLintTextFieldSize" />
 
 
             <Button
@@ -107,7 +107,8 @@
                 android:textColor="#000000"
                 android:textSize="18sp"
                 app:cornerRadius="20dp"
-                tools:ignore="HardcodedText,TextContrastCheck" />
+                tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
 
             <TextView
                 android:id="@+id/textView"
@@ -130,7 +131,6 @@
                 android:textSize="18sp"
                 app:cornerRadius="20dp"
                 tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
-
 
 
         </LinearLayout>

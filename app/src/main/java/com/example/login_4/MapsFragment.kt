@@ -17,16 +17,16 @@ class MapsFragment : Fragment() {
     private lateinit var mapView: MapView
     private lateinit var googleMap: GoogleMap
 
-    @SuppressLint("MissingInflateLayout")
+    @SuppressLint("MissingInflateLayout", "MissingInflatedId")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = inflater.inflate(R.layout.fragment_maps, container, false)
-        mapView = rootView.findViewById(R.id.mapview)
+        mapView = rootView.findViewById(R.id.map)
         mapView.onCreate(savedInstanceState)
         mapView.getMapAsync { map ->
             googleMap = map
-            val sydney = LatLng(-33.852, 151.211)
-            googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 13f))
+            val gla_university = LatLng(-33.852, 151.211)
+            googleMap.addMarker(MarkerOptions().position(gla_university).title("Marker in gla_university"))
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(gla_university, 13f))
         }
         return rootView
     }

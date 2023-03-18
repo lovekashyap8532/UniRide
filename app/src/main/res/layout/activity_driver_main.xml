@@ -22,7 +22,7 @@
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:ignore="HardcodedText,VisualLintOverlap,TextContrastCheck,VisualLintButtonSize" />
+        tools:ignore="HardcodedText,VisualLintOverlap,TextContrastCheck" />
 
     <!--suppress XmlUnboundNsPrefix -->
     <Button
@@ -45,34 +45,40 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="237dp"
-        android:layout_height="122dp"
+        android:layout_width="227dp"
+        android:layout_height="94dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="113dp"
         android:layout_marginEnd="96dp"
-        android:layout_marginBottom="501dp"
+        android:layout_marginBottom="524dp"
         android:gravity="center"
         android:text="UniRide"
         android:textColor="@color/Lavender"
         android:textSize="60sp"
         android:textStyle="bold"
-        tools:ignore="HardcodedText,TextSizeCheck,VisualLintOverlap" />
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="382dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="367dp"
         android:gravity="center"
         android:text="Comfort your ride with UniRide"
         android:textColor="@color/Lavender"
         android:textSize="40sp"
         android:textStyle="bold"
-        tools:ignore="HardcodedText,VisualLintBounds,TextSizeCheck" />
+        tools:ignore="HardcodedText,VisualLintBounds" />
 
 </RelativeLayout>

@@ -1,26 +1,24 @@
 package com.example.login_4
 
 import android.annotation.SuppressLint
-import android.os.Bundle
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.OnMapReadyCallback
-import com.google.android.gms.maps.SupportMapFragment
+import android.os.Bundle
+import android.widget.Button
 
-class ProfileActivity : AppCompatActivity(), OnMapReadyCallback {
+class ProfileActivity : AppCompatActivity() {
+    private lateinit var logoutbutton: Button
 
-    @SuppressLint("SetTextI18n", "MissingInflatedId")
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        val mapFragment = SupportMapFragment.newInstance()
-        supportFragmentManager
-            .beginTransaction()
-            .add(R.id.mapview, mapFragment)
-            .commit()
+        logoutbutton = findViewById(R.id.logoutbutton)
+        logoutbutton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
-    override fun onMapReady(p0: GoogleMap) {
-        TODO("Not yet implemented")
-    }
+
 }

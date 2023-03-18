@@ -22,4 +22,14 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="normal_map">normal_map</string>
+    <string name="satellite_map">satellite_map</string>
+    <string name="hybrid_map">hybrid_map</string>
+    <string name="terrain_map">terrain_map</string>
+    <string name="logout">Logout</string>
+    <string name="username">Username</string>
+    <string name="uniride_gmail_com">Uniride@gmail.com</string>
+    <string name="unirider">Unirider</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="uniride">UniRide</string>
 </resources>
