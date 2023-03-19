@@ -36,6 +36,11 @@ class NearDriver : AppCompatActivity() {
             val intent = Intent(this,PaymentActivity::class.java)
             startActivity(intent)
         }
+        val s5 = findViewById<TextView>(R.id.seat5)
+        s5.setOnClickListener {
+            val intent = Intent(this,PaymentActivity::class.java)
+            startActivity(intent)
+        }
 
         val mapFragment = SupportMapFragment.newInstance()
         supportFragmentManager
