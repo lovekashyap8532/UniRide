@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimgkrr1"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".Messenger">
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="347dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="673dp"
+        android:backgroundTint="@color/Lavender"
+        android:text="UniRide"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,TextSizeCheck,VisualLintBounds"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="614dp"
+        android:background="@color/Lavender"
+        android:hint="   Type your message here"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_send_24"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="654dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
+
+</RelativeLayout>

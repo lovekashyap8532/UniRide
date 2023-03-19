@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bgimgkrr1"
+    tools:context=".SignupActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/custom_edittext">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Mode"
+                android:id="@+id/paymentmode"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/Lavender"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/onlinebutton_2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/Lavender"
+                android:text="Online"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/offlinebutton2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/Lavender"
+                android:text="Offline"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estimated Fare"
+                android:id="@+id/estimatefare"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/Lavender"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/payment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="4 Seats  *  \u20B9 45  =  \u20B9 180"
+                android:padding="8dp"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+            <TextView
+                android:id="@+id/payment1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="3 KM *  \u20B9 15 per KM"
+                android:padding="8dp"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

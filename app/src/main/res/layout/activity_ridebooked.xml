@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimgkrr1"
+    tools:context=".RidebookedActivity">
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="347dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="673dp"
+        android:backgroundTint="@color/Lavender"
+        android:text="UniRide"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,TextSizeCheck,VisualLintBounds"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Ride is Booked Successfully"
+                android:textAlignment="center"
+                android:textColor="@color/Lavender"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardB"
+        android:layout_below="@id/cardA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:id="@+id/feedback_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Details of E-rickshaw Driver"
+                android:textAlignment="center"
+                android:textColor="@color/Lavender"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:autofillHints=""
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="Driver's Name:  Uniride Owner"
+                android:textColor="@color/Lavender"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextContrastCheck,TextContrastCheck,TextFields,TextSizeCheck,VisualLintTextFieldSize" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="Mobile No. 998765xxxx"
+                android:textColor="@color/Lavender"
+                android:textColorHint="#AB47BC"
+                android:textSize="20sp"
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck,VisualLintTextFieldSize" />
+
+            <TextView
+                android:id="@+id/Seat1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="Number of Seats booked :  4"
+                android:textColor="@color/Lavender"
+                android:textColorHint="#AB47BC"
+                android:textSize="20sp"
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck,VisualLintTextFieldSize" />
+
+            <TextView
+                android:id="@+id/Seat2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="E-rickashaw No. UP8045"
+                android:textColor="@color/Lavender"
+                android:textColorHint="#AB47BC"
+                android:textSize="20sp"
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck,VisualLintTextFieldSize" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

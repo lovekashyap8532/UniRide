@@ -11,9 +11,9 @@
     <FrameLayout
         android:id="@+id/map"
         android:layout_width="match_parent"
-        android:layout_height="425dp"
+        android:layout_height="396dp"
         android:layout_above="@+id/current_location"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="5dp"
         android:layout_weight="1"
         tools:ignore="ObsoleteLayoutParam">
 
@@ -32,7 +32,7 @@
         android:backgroundTint="@color/Lavender"
         android:text="UniRide"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,TextSizeCheck"
         tools:layout_editor_absoluteY="2dp" />
@@ -61,12 +61,13 @@
 
     <ImageButton
         android:id="@+id/messenger_button"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="0dp"
-        android:padding="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
         android:background="#039be5"
+        android:padding="10dp"
         android:src="@drawable/msglogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -87,13 +88,15 @@
 
     <ImageButton
         android:id="@+id/profilebutton"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="19dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="35dp"
         android:layout_toStartOf="@+id/messenger_button"
         android:background="#039BE5"
-        android:src="@drawable/pflogo"
+        android:src="@drawable/profilepic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />

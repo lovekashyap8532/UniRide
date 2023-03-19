@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimgkrr1"
+    android:gravity="center"
+    android:layout_gravity="center"
+    >
+
+    <ImageButton
+        android:id="@+id/drvprofilebutton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="35dp"
+        android:layout_toStartOf="@+id/drvmessenger_button"
+        android:background="#039BE5"
+        android:src="@drawable/profilepic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/drvmessenger_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
+        android:background="#039be5"
+        android:padding="10dp"
+        android:src="@drawable/msglogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="292dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="373dp"
+        android:layout_weight="1"
+        tools:ignore="ObsoleteLayoutParam,UnknownIdInLayout">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="347dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="673dp"
+        android:backgroundTint="@color/Lavender"
+        android:text="UniRide"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,TextSizeCheck,VisualLintBounds"
+        tools:layout_editor_absoluteY="2dp" />
+
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="361dp"
+        android:gravity="center"
+        android:text="Location of passenger"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded,VisualLintBounds" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:layout_below="@id/location">
+
+        <LinearLayout
+            android:id="@+id/psginfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <TextView
+                android:id="@+id/psgcurrentloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Current Location    GLAU"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded,VisualLintOverlap" />
+
+            <TextView
+                android:id="@+id/destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psgcurrentloc"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Destination    Mathura"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded,VisualLintOverlap" />
+
+
+            <TextView
+                android:id="@+id/psgname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/destination"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Name  UniRider"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/psgnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psgname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Mobile No. 998756xxxx"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold|normal"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimgkrr1"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:ignore="ExtraText">
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="379dp"
+        android:layout_weight="1"
+        tools:ignore="ObsoleteLayoutParam,UnknownIdInLayout">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="347dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="673dp"
+        android:backgroundTint="@color/Lavender"
+        android:text="UniRide"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,TextSizeCheck,VisualLintBounds"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/seat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="375dp"
+        android:text="R-1    1 Seat Available"
+        android:textColor="@color/Lavender"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    <TextView
+        android:id="@+id/seat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seat1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="27dp"
+        android:text="R-2    No Seats Available"
+        android:textColor="@color/Lavender"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded,VisualLintOverlap" />
+
+
+    <TextView
+        android:id="@+id/seat3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seat2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:text="R-3    4 Seats Available"
+        android:textColor="@color/Lavender"
+        android:textSize="30sp"
+        android:textStyle="bold|normal"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/seat4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seat3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:text="R-4    2 Seats Available "
+        android:textColor="@color/Lavender"
+        android:textSize="30sp"
+        android:textStyle="bold|normal"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/seat5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seat4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:text="R-5    3 Seats Available "
+        android:textColor="@color/Lavender"
+        android:textSize="30sp"
+        android:textStyle="bold|normal"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+</RelativeLayout>

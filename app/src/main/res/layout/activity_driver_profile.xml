@@ -47,7 +47,7 @@
         android:drawableLeft="@drawable/baseline_person_24"
         android:drawablePadding="8dp"
         android:padding="18dp"
-        android:text="@string/unirider"
+        android:text="Uniride Owner"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,7 +64,7 @@
         android:background="@drawable/custom_edittext"
         android:drawablePadding="8dp"
         android:padding="18dp"
-        android:text="@string/uniride_gmail_com"
+        android:text="unirideowner@gmail.com"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:drawableLeftCompat="@drawable/baseline_email_24"
@@ -76,7 +76,7 @@
         tools:ignore="MissingConstraints,SpUsage,TextSizeCheck,VisualLintBounds" />
 
     <Button
-        android:id="@+id/logoutbutton"
+        android:id="@+id/drvlogoutbutton"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/Lavender"

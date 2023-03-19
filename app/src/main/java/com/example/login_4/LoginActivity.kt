@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var email: EditText
+    private lateinit var emai: EditText
     private lateinit var password: EditText
     private lateinit var loginbutton: Button
     private lateinit var auth: FirebaseAuth
@@ -21,14 +21,14 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
+        emai = findViewById(R.id.username)
         password = findViewById(R.id.password)
         loginbutton = findViewById(R.id.loginbutton)
 
         auth = FirebaseAuth.getInstance()
 
         loginbutton.setOnClickListener {
-            val email = email.text.toString()
+            val email = emai.text.toString()
             val password = password.text.toString()
 
             if (email.isEmpty() || password.isEmpty()) {
@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
                             auth.currentUser
                             Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
 
-                            // Redirect to ProfileActivity
+                            // Redirect to HomeActivity
                             val intent = Intent(this, HomeActivity::class.java)
                             startActivity(intent)
                             finish()
@@ -51,18 +51,17 @@ class LoginActivity : AppCompatActivity() {
                             Toast.makeText(this, "Authentication failed", Toast.LENGTH_SHORT).show()
                         }
                     }
-// ...
 
             }
         }
     }
 
-    override fun onStart() {
-        super.onStart()
-        if(FirebaseAuth.getInstance().currentUser != null) {
-            val intent = Intent(this,HomeActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-    }
+//    override fun onStart() {
+//        super.onStart()
+//        if(FirebaseAuth.getInstance().currentUser != null) {
+//            val intent = Intent(this,HomeActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
+//    }
 }
